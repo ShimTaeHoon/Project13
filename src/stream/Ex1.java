@@ -13,7 +13,7 @@ public class Ex1 {
 		// 인자는 원본 , 반환은 스트림
 		// 원본데이터에 따라서 함수 선택
 		List<Integer> list = Arrays.asList(1, 2, 3, 4, 5); //리스트 생성
-		Stream<Integer> stream1 = list.stream();
+		Stream<Integer> stream1 = list.stream(); // .stream으로 스트림 생성
 		
 		// 객체 배열로부터 스트림 생성하기
 		String[] strArr = { "a", "b", "c" };

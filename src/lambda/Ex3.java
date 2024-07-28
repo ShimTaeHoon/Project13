@@ -11,11 +11,16 @@ public class Ex3 {
 
 		// 문자열 리스트 생성
 		List<String> list = new ArrayList<>();
+		List<String> list2 = new ArrayList<>();
 
 		// 문자열 추가
 		list.add("aaa");
 		list.add("ccc");
 		list.add("bbb");
+		// 람다식 리스트추가
+		list2.add("aaa");
+		list2.add("ccc");
+		list2.add("bbb");
 
 		// @FunctionalInterface : 함수형인터페이스
 //		Collections.sort(): 리스트의 요소를 순서대로 정렬하는 메소드
@@ -45,7 +50,8 @@ public class Ex3 {
 		
 		// 함수형 인터페이스인 경우에만 람다식으로 구현가능
 		// 람다식으로 인터페이스 구현하기
-		Collections.sort(list, (o1, o2) -> o2.compareTo(o1));
+		Collections.sort(list2, (o1, o2) -> o2.compareTo(o1));
+		System.out.println("리스트 역순정렬:" + list2);
 
 	}
 

@@ -16,9 +16,13 @@ public class Quiz1 {
 			}
 		};
 		
+		int result = number2.max(10, 30);
+		System.out.println("number2 : " + result);
+//		System.out.println(number2.max(11, 22));
+		
 		// 람다식 함수를 사용하여 구현(람다식은 간단하게 사용하기 위해)
 		MyNumber number3 = (x, y) -> x > y ? x : y;
-		System.out.println(number3.max(10, 20));
+		System.out.println("number 3 : " + number3.max(10, 20));
 
 	}
 

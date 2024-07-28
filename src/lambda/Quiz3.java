@@ -8,6 +8,7 @@ public class Quiz3 {
 		StringConverter stringC1 = new StringConverterImpl();
 		String result = stringC1.convert("a");
 		System.out.println(result);
+//		System.out.println(stringC1.convert("a"));
 
 		// 익명
 		StringConverter stringC = new StringConverter() {

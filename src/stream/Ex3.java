@@ -15,21 +15,24 @@ public class Ex3 {
 		List<Integer> list = Arrays.asList(1, 1, 2, 3, 5, 4);
 //		
 //		// 리스트로부터 스트림 생성
-//		Stream<Integer> stream1 = list.stream();
+		Stream<Integer> stream1 = list.stream();
 //		
 //		// distinct: 중복을 제거하는 연산자
-////		stream1.distinct().forEach(n -> System.out.print(n + " "));
+		stream1.distinct().forEach(n -> System.out.print(n + " "));
 //				// 중간     // 최종
+		System.out.println();
 //		
 //		// filter: 조건에 맞는 결과를 추출. 2의 배수만 추출
-//		list.stream()
-//				.filter(n -> n % 2 == 0)
-//				.forEach(n -> System.out.print(n + " "));
+		list.stream()
+				.filter(n -> n % 2 == 0)
+				.forEach(n -> System.out.print("test" + n + " "));
+		System.out.println();
 //		
 //		// limit: 요소를 3개만 추출
-//		list.stream()
-//				.limit(3)
-//				.forEach(n -> System.out.print(n + " "));
+		list.stream()
+				.limit(3)
+				.forEach(n -> System.out.print("limit" + n + " "));
+		System.out.println();
 //		
 		// sort는 정렬..(중간) -> reverseOrder 역정렬로직
 		list.stream()

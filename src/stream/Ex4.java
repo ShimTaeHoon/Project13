@@ -26,10 +26,11 @@ public class Ex4 {
 		System.out.println(stream3.sum()); // 기본형 스트림만 사용 가능
 		
 		// reduce: 초기값을 넣고, 반복 작업 수행
-		IntStream stream4 = Arrays.stream(intArr);
+		// 주어진 함수를 반복 적용해 스트림 안의 데이터를 하나의 값으로 합침
+		IntStream stream4 = Arrays.stream(intArr); 
 		int result = stream4.reduce(10, (total, n) -> total + n);
-		System.out.println(result);
-
+		System.out.println("test" + result);
+		
 		// 리스트 생성
 		List<Integer> list = Arrays.asList(1, 2, 3, 4, 5);
 		
@@ -43,4 +44,12 @@ public class Ex4 {
 		
 	}
 
+}
+
+class sumsum {
+	
+	public int sumsum2 (int total, int n) {
+		return total + n;
+	}
+	
 }
